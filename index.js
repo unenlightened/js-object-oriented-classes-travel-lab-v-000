@@ -5,7 +5,7 @@ class Driver {
     this.startDate = new Date(startDate)
   }
 
-  yearsExperienceFromBeginningOf(endDate) {
-    return endDate - startDate
+  yearsExperienceFromBeginningOf(endYear) {
+    return endYear - Date.prototype.getFullYear(startDate)
   }
 }
