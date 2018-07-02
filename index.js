@@ -18,8 +18,9 @@ class Route {
 
   blocksTravelled() {
     let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
-    horizontal = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.vertical))
+    let vertical = Math.abs(parseInt(this.beginningLocation.vertical) - parse.Int(this.endingLocation.vertical))
+    let horizontal = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.vertical))
 
-    return horizontal
+    return vertical + horizontal
   }
 }
