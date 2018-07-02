@@ -4,4 +4,8 @@ class Driver {
     this.name = name
     this.startDate = Date(startDate)
   }
+
+  yearsExperienceFromBeginningOf(endDate) {
+    
+  }
 }
